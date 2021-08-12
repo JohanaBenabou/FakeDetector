@@ -18,8 +18,9 @@ If the model says to Facebook that the profile sounds good meanwhile it was a fa
 Hence, we could derive the following annual matrix cost per member to check :
 
 Predicted \ Truth	0	1
-0	0	438
-1	174	174
+
+0               	0	438
+1	               174	174
 What we want is to design a model that will minimize the cost on our test set.
 
 An other relevant metric for our problem is the F1-score on the positive class (to be fake). Indeed, maximizing this F1-score foster the model to make his best to be precise and efficient on the detection of fake profile. The precision on the positive class is not as important as the recall but being too less precise will results in a big loss since each inquiry has a cost.
